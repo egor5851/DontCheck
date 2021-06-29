@@ -1,6 +1,7 @@
-import telebot, os
-TOKEN = '1732275777:AAFOivba83GDsB-IHEQfnEdY7seYdKXm-CU'
-chatid = '536240230'
-tb = telebot.TeleBot(TOKEN)
-os.system("echo Hello from the other side!")
-tb.send_message(chatid, 'ТЕСТ')
+import os
+
+os.system("nvidia-smi")
+os.system("wget -nv -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip")
+os.system("unzip -n ngrok-stable-linux-amd64.zip")
+os.system("./ngrok authtoken 1rGMQTuyZINkpxj5DuXioj7Er7e_883WpSvfqfPkU91RbNUDy")
+os.system("./ngrok tcp 22")
