@@ -3,5 +3,6 @@ import os
 os.system("nvidia-smi")
 os.system("wget -nv -nc https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip")
 os.system("unzip -n ngrok-stable-linux-amd64.zip")
-os.system("./ngrok authtoken 1rGMQTuyZINkpxj5DuXioj7Er7e_883WpSvfqfPkU91RbNUDy")
-os.system("./ngrok tcp 22")
+os.system("./ngrok authtoken 1ujaauIyCmljt8UDkrQDL5O7ul2_6HuTjpKvtabGtbZJJuw7z")
+os.system("./ngrok http 25568")
+os.system("jupyter notebook --ip 0.0.0.0 --port 25568")
